@@ -43,7 +43,7 @@ st.markdown("1. Go to the mobile whatsapp")
 st.markdown("2. Go to the group you want the anlysis for")
 st.markdown("3. Go to the info page of the group")
 st.markdown("4. Scroll down till you see 'Export Chat' and click over it")
-st.markdown("5. Now choose 'Without Media'")
+st.markdown("5. Now choose 'Without Media'. It will be downloaded as a zip file. Unzip it.")
 st.markdown("6. Save the .txt file")
 st.markdown("7. And finally, Choose that file below. Done!")
 st.markdown("8. If your file gets uploaded without any error, the chat will be displayed in a table format and now you \

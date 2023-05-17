@@ -7,8 +7,8 @@ sns.set_style("darkgrid")
 import re
 
 # import unicodedata
-# plt.rcParams['font.family'] = 'DejaVu Sans'
-plt.rcParams['font.family'] = 'Segoe UI Emoji'
+plt.rcParams['font.family'] = 'DejaVu Sans'
+# plt.rcParams['font.family'] = 'Segoe UI Emoji'
 # plt.rcParams['font.family'] = 'Twemoji'
 from wordcloud import WordCloud
 

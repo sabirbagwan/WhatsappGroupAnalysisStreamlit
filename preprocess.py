@@ -14,7 +14,9 @@ def preprocess(data):
     df['date'] = df['date'].str.replace(']', '')
 
 
-    group_name = df.loc[df['message'].str.contains('added you')]['message'].str.split(':').str[0]
+#     group_name = df.loc[df['message'].str.contains('added you')]['message'].str.split(':').str[0]
+    group_name = df.loc[df['message'].str.contains('added you') | df['message'].str.contains('Messages and calls are end-to-end encrypted')]['message'].str.split(':').str[0]
+
     group_name = group_name.values[0]
     group_name
 

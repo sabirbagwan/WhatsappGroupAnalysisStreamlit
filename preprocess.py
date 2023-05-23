@@ -10,8 +10,10 @@ def preprocess(data):
 
     df = pd.DataFrame({'date': dates, 'message': messages})
     
-    df['date'] = df['date'].str.replace('[', '')
-    df['date'] = df['date'].str.replace(']', '')
+#     df['date'] = df['date'].str.replace('[', '')
+#     df['date'] = df['date'].str.replace(']', '')
+    df['date'] = df['date'].astype(str).str.replace('[', '')
+    df['date'] = df['date'].astype(str).str.replace(']', '')
 
 
 #     group_name = df.loc[df['message'].str.contains('added you')]['message'].str.split(':').str[0]
